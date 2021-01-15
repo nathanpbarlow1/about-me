@@ -1,7 +1,7 @@
 'use strict';
 
 var userName = prompt('Hi! What is your name?');
-alert('Welcome to my site ' + userName);
+alert('Welcome to my site ' + userName + '!');
 
 
 //write 5 questions. they MUST accept yes or no OR y or n IN ANY CASE
@@ -46,7 +46,7 @@ if (surfParticipant === 'no' || surfParticipant === 'n') {
   alert('Maybe someday...as long as I live in WA it\'s too cold');
   // console.log('you are correct. ');
 
-alert('Have a good time,' + userName +'!');
+alert('Have a good time, ' + userName +'!');
 
 
 
