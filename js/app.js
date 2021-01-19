@@ -86,34 +86,51 @@ for (var i = 0; i < 3; i++){
 // Consider using a loop of some sort for this question.
 // As a user, I would like to know my final score so that I can know how well I did.
 // Keep track of the total number of correct answers. At the end tell them how many they got correct out of the 7 questions asked.
-
+var statesArray = [1, 2, 3, 4, 5];
+var answeredSevenCorrectly = false;
 
 for (var i = 0; i < 6; i++){
-  var answerSeven = prompt('How many states have I lived in?').toLowerCase();
+  var answerSeven = parseInt(prompt('How many states have I lived in? (please enter a integer)'));
   //console.log(answerSeven);
-  var statesArray = [1, 2, 3, 4, 5];
-  if(answerSeven === '1' || answerSeven === 'one'){
-    alert('That is correct!');
-    score++;
-    break;
+  for (var j =0; j < statesArray.length; j++){
+    if(answerSeven === statesArray[j] ){
+      alert('That is correct!');
+      answeredSevenCorrectly = true;
+      score++;
+      break;
+    }
   }
-  if(answerSeven === '2' || answerSeven === 'two'){
-    alert('That is correct!');
-    score++;
+  if (answeredSevenCorrectly === true){
     break;
+  } else{
+    alert('Sorry, that\'s not correct.');
   }
-  if(answerSeven === '3' || answerSeven === 'three'){
-    alert('That is correct!');
-    score++;
-    break;
-  }
-  if(answerSeven === '4' || answerSeven === 'four'){
-    alert('That is correct!');
-    score++;
-    break;
-  }
-  if(answerSeven === '5' || answerSeven === 'five'){
 }
+// if(answerSeven === '1' || answerSeven === 'one'){
+//     alert('That is correct!');
+//     score++;
+//     break;
+//   }
+//   if(answerSeven === '2' || answerSeven === 'two'){
+//     alert('That is correct!');
+//     score++;
+//     break;
+//   }
+//   if(answerSeven === '3' || answerSeven === 'three'){
+//     alert('That is correct!');
+//     score++;
+//     break;
+//   }
+//   if(answerSeven === '4' || answerSeven === 'four'){
+//     alert('That is correct!');
+//     score++;
+//     break;
+//   }
+//   if(answerSeven === '5' || answerSeven === 'five'){
+//     alert('That is correct!');
+//     score++;
+//     break;
+// }
 
 // Check read me for credit for this loop!
 
