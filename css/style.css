@@ -8,10 +8,5 @@ body {
 ul {
     list-style: disc;
     list-style-position: outside;
-    margin: 60px;
-
-ol {
-    list-style: lower-roman;
-    
-}
+    margin: 0px;
 }
