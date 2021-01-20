@@ -61,7 +61,7 @@ alert('Have a good time, ' + userName +'!');
 // It should give the user exactly four opportunities to get the correct answer.
 // After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
 
-for (var i = 0; i < 3; i++){
+for (var i = 0; i < 4; i++){
   var answerSix = prompt('Guess a number between 1 and 10! You\'ve only got 4 guesses!');
   // console.log(answerSix);
   if (i === 3){
@@ -89,7 +89,7 @@ for (var i = 0; i < 3; i++){
 var statesArray = [1, 2, 3, 4, 5];
 var answeredSevenCorrectly = false;
 
-for (var i = 0; i < 6; i++){
+for (var j = 0; j < 6; j++){
   var answerSeven = parseInt(prompt('How many states have I lived in? (please enter a integer)'));
   //console.log(answerSeven);
   for (var j =0; j < statesArray.length; j++){
@@ -105,6 +105,7 @@ for (var i = 0; i < 6; i++){
   } else{
     alert('Sorry, that\'s not correct.');
   }
+alert('The correct answers are 1, 2, 3, 4 & 5');
 }
 // if(answerSeven === '1' || answerSeven === 'one'){
 //     alert('That is correct!');
